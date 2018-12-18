@@ -20,12 +20,12 @@ public class MenuActivity extends AppCompatActivity {
 
         container = (LinearLayout) findViewById(R.id.container);
 
-        Button button = (Button) findViewById(R.id.button);
+        Button button = (Button) findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
                 LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                inflater.inflate(R.layout.sub1, container, true);
+                inflater.inflate(R.layout.sub1, container, true); //콘테이너를 sub1레이아웃을 설정하라
 
                 CheckBox checkBox = (CheckBox) container.findViewById(R.id.checkBox);
                 checkBox.setText("로딩되었어요.");
